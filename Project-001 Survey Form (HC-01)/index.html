@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">NET<span>FLIX</span></h1>
+        <h3 id="description">Thank you for signing up at Netflix.Tell us more about yourself</h3>
+        <form id="surway form" action="result.html" method="GET" target="blank">
+        <div class="box">
+        <label>Name:<br><input type="text" placeholder="enter your name" name="name" id="name"></label>
+        </div>
+        <br>
+        <div class="box">
+        <label>Age:<br><input type="number" placeholder="age" name="age" id="age" min="18" max="100"></label>
+        </div>
+        <br>
+        <div class="box">
+        <label>Email:<br><input type="email" placeholder="enter your email"name="email" id="email" maxlength="45"></label>
+        </div>
+        <br>
+        <div class="box">
+            <label for="dropdown" id="dropdown-label">Content type:</label>
+            <br>
+            <select name="content" id="dropdown" >
+                <option value="Movie">Movie</option>
+                <option value="Series" selected>Series</option>
+            </select>
+        </div>
+        <br>
+        
+        <div class="box">
+            <label id="checkbox">Movie type</label> 
+            <br>
+            <label for="first"><input type="checkbox" id="first" name="movie1" value="Comedy">Comedy:</label>
+            <br>
+            <label for="second"></label><input type="checkbox" id="second" name="movie2" value="Action">Action:</label>
+            <br>
+            <label for="third"></label><input type="checkbox" id="third" name="movie3" value="Romance" checked>Romance:</label>
+        </div>
+        </br>
+
+        <div class="box">
+            <label id="gender">Gender</label>
+            <br>
+            <label for="cinsiyet-1"><input type="radio"id="cinsiyet-1" name="gender" value="male" >Male:</label><br>
+            <label for="cinsiyet-2"><input type="radio" name="gender" value="female" id="cinsiyet-2">Female:</label><br>
+            <label for="cinsiyet-3"><input type="radio" name="gender" value="other" id="cinsiyet-3">Other:</label><br>
+
+        </div>
+        </br>
+
+
+
+        
+        <div class="box">
+            <label id="feed">Feed back:</label><br>
+        
+            <textarea class="text-area"  name="message" rows="5" cols="50" placeholder="any comment"></textarea>
+        </div>
+        
+        
+        <input type="submit" id="submit" value="Gönder">
+             
+    </form>
+    
+</body>
+</html>
